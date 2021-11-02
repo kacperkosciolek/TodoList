@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(90deg, rgba(82, 205, 44, 1) 0%, rgba(199, 255, 24, 0.8743872549019608) 0%, rgba(154, 123, 128, 1) 0%, rgba(54, 47, 47, 1) 100%, rgba(245, 77, 77, 1) 100%);
+}
+
+.todo {
+    width: 900px;
+    border-radius: 8px;
+    background-image: linear-gradient(90deg, rgba(71, 210, 28, 1) 0%, rgba(199, 255, 24, 0.8743872549019608) 0%, rgb(112, 80, 84) 0%, rgb(187, 170, 170) 100%, rgba(245, 77, 77, 1) 100%);
+    height: 350px;
+    margin-top: -300px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.todoInput {
+    padding: 12px 10px;
+    width: 70%;
+    border-radius: 5px;
+    border: none;
+}
+
+.addBtn {
+    width: 20%;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
+    transition: background-color .2s;
+}
+
+.addBtn:hover {
+    background-color: rgb(202, 165, 165);
+}
+
+h3 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+
+.todo-list {
+    background-image: linear-gradient(90deg, rgba(82, 205, 44, 1) 0%, rgba(199, 255, 24, 0.8743872549019608) 0%, rgb(226, 209, 209) 0%, rgba(190, 158, 158, 1) 100%, rgba(245, 77, 77, 1) 100%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+ul {
+    padding: 30px;
+}
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 15px 50px;
+    margin: 25px 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 60px;
+    box-shadow: 0 0 3px rgb(160, 142, 142);
+}
+
+.fas {
+    padding: 18px;
+}
+
+.complete,
+.reject {
+    font-size: 24px;
+    border: none;
+    color: white;
+    transition: background-color .3s'
+
+}
+
+.complete {
+    position: absolute;
+    right: 130px;
+    background-color: rgb(31, 143, 89);
+}
+
+.complete:hover {
+    background-color: rgb(20, 165, 95);
+}
+
+.reject {
+    background-color: rgb(202, 89, 69);
+}
+
+.reject:hover {
+    background-color: rgb(209, 47, 47);
+}
+
+.completed {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.completedBtn {
+    background-color: rgb(190, 181, 181);
+    color: black;
+}
+
+.completedBtn:hover {
+    background-color: rgb(160, 160, 160);
+}
+
+.hide-list {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    width: 30%;
+    margin: 0 20px 25px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(182, 148, 148);
+    text-transform: uppercase;
+    box-shadow: 0 0 4px rgb(56, 52, 52);
+    transition: background-color .3s;
+}
+
+.buttons button:hover {
+    background-color: rgb(161, 122, 122);
+}
+
+.buttons .sizeUp,
+.buttons .sizeDown {
+    width: 10%;
+    color: rgb(246, 243, 243);
+}
+
+.buttons .sizeUp {
+    background-color: rgb(37, 165, 39);
+}
+
+.buttons .sizeUp:hover {
+    background-color: rgb(23, 182, 23);
+}
+
+.buttons .sizeDown {
+    background-color: rgb(194, 68, 74);
+}
+
+.buttons .sizeDown:hover {
+    background-color: rgb(200, 35, 35);
+}
